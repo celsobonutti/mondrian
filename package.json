@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "parcel build src/index.html",
+    "build": "bsb -clean-world -make-world && parcel build src/index.html",
     "dev": "NODE_ENV=development parcel src/index.html --open --port 3000",
     "dev:res": "bsb -clean-world -make-world -w"
   },
